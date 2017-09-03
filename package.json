@@ -1,13 +1,24 @@
 {
-  "name": "efficiChat",
-  "version": "0.0.1",
-  "description": "An Ionic project",
-  "devDependencies": {
-    "@ionic/cli-plugin-gulp": "1.1.1",
-    "@ionic/cli-plugin-ionic1": "2.1.1",
-    "gulp": "^3.5.6",
-    "gulp-clean-css": "^3.7.0",
-    "gulp-rename": "^1.2.0",
-    "gulp-sass": "^3.1.0"
-  }
+    "name": "efficiChat",
+    "version": "0.0.1",
+    "description": "An Ionic project",
+    "devDependencies": {
+        "@ionic/cli-plugin-cordova": "1.6.2",
+        "@ionic/cli-plugin-gulp": "1.1.1",
+        "@ionic/cli-plugin-ionic1": "2.1.1",
+        "gulp": "^3.5.6",
+        "gulp-clean-css": "^3.7.0",
+        "gulp-rename": "^1.2.0",
+        "gulp-sass": "^3.1.0"
+    },
+    "dependencies": {
+        "cordova-plugin-x-toast": "git+https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin.git",
+        "de.appplant.cordova.plugin.local-notification": "^0.8.5"
+    },
+    "cordova": {
+        "plugins": {
+            "de.appplant.cordova.plugin.local-notification": {},
+            "cordova-plugin-x-toast": {}
+        }
+    }
 }

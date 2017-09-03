@@ -1,0 +1,79 @@
+<ion-view view-title="efficiChat" title="homeView">
+  <ion-content>
+    <ion-header>
+    <ion-navbar>
+    
+        <ion-title class="item item-divider navbar-inverse">
+            <a class="navbar-brand" ui-sref="app" ng-click="homeAlert()"><img id="logo" src="img/EfficiChatLogo.png"></a><button class="button-small" id="loginButton" ng-click="login()"><i class="ion ion-power"></i> Login</button>
+        </ion-title>
+        <ion-title class="item item-divider" id="companyBar">
+            <i class="ion ion-briefcase"></i> Company<button class="button button-small button-icon icon ion-navicon" id="companyMore" ng-click="openPopover($event)"></button>
+        </ion-title>
+        <ion-title>
+            <div class="row row-no-padding">
+            <div class="col col-45">
+              <div class="button-bar">
+                <a class="button button-small no-padding" id="usersButton" ui-sref="app.users"> <i class="ion ion-person-stalker"></i> Users </a>
+                <a class="button button-small no-padding" id="alertsButton" ui-sref="app.alerts"> <i class="ion ion-alert-circled"></i> Alerts </a>
+              </div>
+            </div>
+            <div class="col col-55 no-padding">
+            <div class="list no-padding">
+            <div class="bar bar-header item-input-inset" id="searchField">
+          <label for="searchBox" class="item-input-wrapper">
+              <input type="text" placeholder="search" id="searchBox" class="no-padding" ng-model="queryText">
+          </label>
+          <button id="searchButton" class="button button-small button-icon icon ion-ios-search-strong no-padding">
+          </button>
+          </div>
+        </div>
+        </div>
+        </div>
+          </div>
+          </ion-title>
+    </ion-navbar>
+    </ion-header>
+    
+        <div id="chat">
+        <div ng-show="showDepartments">{{content}}</div>
+      <div ng-show="showProjects">{{content}}</div>
+            <h3 align="center"><img class="imageStyle" src="img/ImageA.png"> Project A</h3>
+                <div class="row">
+      <div class="row">
+    <div class="col col-100"> 
+          
+          <div id="chatMessages" ng-controller="ProjAListCtrl as listA">
+                    <ul class="list-unstyled" id="newMessage" ng-repeat="messageA in listA.messagesA | filter:queryText">
+                    <li>{{ messageA.text }}</li>
+                    </ul>
+                </div> 
+                   
+        </div>
+    </div>
+        <div class="col col-70">
+        <div id="message" ng-controller="ProjAPostCtrl as postA">
+        <form name="messageForm" role="submit" ng-submit="postA.addMessage(postA.newMessage)" role="form">
+        <div class="form-group">
+            <textarea id="yourMessage" rows="7" ng-model="postA.newMessage" class="form-control"></textarea>
+              <div class="row row-no-padding">
+                <div class="col col-50"></div>
+                <div class="col col-25">
+                <form name="upload" class="form" data-ng-submit="addFile()">
+  <input class="inputfile" type="file" name="file" multiple 
+ onchange="angular.element(this).scope().uploadedFile(this)" />
+                    <label for="file"><button id="attach" class="btn btn-block" type="submit"><i class="ion ion-paperclip" aria-hidden="true"></i> File</button></label>
+                    </form>
+                </div>
+                <div class="col col-25">
+                    <button type="submit" id="send" class="btn btn-block"><i class="ion ion-email" aria-hidden="true"></i> Send</button>
+                </div>
+                </div>
+        </div>
+        </form>
+        </div>
+        <div class="col col-30"></div>        
+        </div>
+        </div>
+      
+  </ion-content>
+</ion-view>

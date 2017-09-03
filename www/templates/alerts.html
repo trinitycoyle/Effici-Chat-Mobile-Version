@@ -1,0 +1,39 @@
+<ion-view view-title="Alerts" title="alertView">
+  <ion-content>
+  <ion-header>
+  	<ion-navbar>
+    
+        <ion-title class="item item-divider navbar-inverse">
+            Effici-Chat<button class="button-small" id="loginButton" ng-click="login()"><i class="ion ion-power"></i> Login</button>
+        </ion-title>
+        <ion-title class="item item-divider" id="companyBar">
+            <i class="ion ion-briefcase"></i> Company<button class="button button-small button-icon icon ion-navicon" id="companyMore" ng-click="openPopover($event)"></button>
+        </ion-title>
+        <ion-title>
+            <div class="row row-no-padding">
+            <div class="col col-45">
+           		<div class="button-bar">
+           			<button class="button-small item" id="usersButton" ui-sref="app.users"> <i class="ion ion-person-stalker"></i> Users </button>
+           			<button class="button-small item" id="alertsButton" ui-sref="app.alerts"> <i class="ion ion-alert-circled"></i> Alerts </button>
+           		</div>
+           	</div>
+           	<div class="col col-55 no-padding">
+           	<div class="list no-padding">
+           	<div class="bar bar-header item-input-inset" id="searchField">
+    			<label class="item-input-wrapper">
+      				<input type="text" placeholder="search" id="searchBox">
+    			</label>
+    			<button class="button button-small button-icon icon ion-ios-search-strong">
+    			</button>
+    			</div>
+  			</div>
+  			</div>
+  			</div>
+        	</div>
+        	</ion-title>
+    </ion-navbar>
+    </ion-header>
+      
+    <h1>Alerts</h1>
+  </ion-content>
+</ion-view>

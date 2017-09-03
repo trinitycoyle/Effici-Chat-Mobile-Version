@@ -1,25 +1,37 @@
 <ion-modal-view>
-  <ion-header-bar>
-    <h1 class="title">Login</h1>
-    <div class="buttons">
-      <button class="button button-clear" ng-click="closeLogin()">Close</button>
-    </div>
-  </ion-header-bar>
   <ion-content>
-    <form ng-submit="doLogin()">
-      <div class="list">
-        <label class="item item-input">
-          <span class="input-label">Username</span>
-          <input type="text" ng-model="loginData.username">
-        </label>
-        <label class="item item-input">
-          <span class="input-label">Password</span>
-          <input type="password" ng-model="loginData.password">
-        </label>
-        <label class="item">
-          <button class="button button-block button-positive" type="submit">Log in</button>
-        </label>
-      </div>
-    </form>
+    <div id="loginModal" class="modal-content">
+        
+            <div class="modal-header">
+              <div class="row">
+                <div class="col col-90">
+                <h4 id="loginModalTitle"> User Login</h4>
+                </div>
+                <div class="col col-10">
+                <button id="modal-close" type="button" class="button button-small button-icon icon ion-close" ng-click="closeLogin()"></button>
+                </div>
+              </div>
+              <div>
+                            <button id="newReg" class="button button-dark button-clear" ng-click="openRegister()">Click here to register</button>
+                            </div>
+            </div>
+            <div class="modal-body">
+            <form ng-submit="doLogin()">
+                        <div class="form-group">
+                            <label for="username">Username</label><br>
+                            <input id="username" type="text" class="form-control" name="username" ng-model="loginData.username"><br>
+                            <label for="password">Password</label><br>
+                            <input id="password" type="text" class="form-control" name="password" ng-model="loginData.password"><br>
+                            <div class="row row no-padding">
+                            <div class="col col-30"></div>
+                            <div class="col col-40">
+                            <button id="cancel" type="button" class="button button-default button-small" ng-click="closeLogin()"><i class="ion ion-close" aria-hidden="true"></i> Cancel</button></div>
+                            <div class="col col-40">
+                            <button id="submit" type="submit" class="button button-small"><i class="ion ion-power" aria-hidden="true"></i> Login</button></div>
+                            </div>
+                        </div>
+            </form>
+            </div>
+    </div>
   </ion-content>
 </ion-modal-view>

@@ -1,1 +1,288 @@
-/* Empty. Add your own CSS if you like */
+
+
+.navbar-inverse {
+     background: #52A2FF;
+     height: 60px;
+     border-bottom: 0;
+}
+
+#logo {
+	height: 40px;
+	width: 110px;
+}
+
+#loginButton {
+	background: #AC7CE3;
+	float: right;
+	border-width: 0px;
+	border-style: solid;
+	border-radius: 0px;
+}
+
+@media (min-width: 100px) {
+.modal {
+    top: 10%;
+    right: 10%;
+    bottom: 30%;
+    left: 10%;
+    min-height: 100px;
+    width: 80%;
+  }
+}
+
+@media (max-width: 680px) {
+    .active .modal-backdrop-bg {
+    opacity: .5;
+    transition: opacity 10ms ease-in-out;
+    background-color: #000;
+    }
+}
+
+#modal-close {
+	float: right;
+}
+
+#modal-close::before {
+	font-size: small;
+}
+
+.modal-content {
+	color: #000;
+}
+
+.modal-header {
+	background: #AC7CE3;
+	color: #000;
+	text-align: center;
+}
+
+#loginModalTitle {
+	margin-left: 20px;
+}
+
+.modal-body {
+	background: #AC7CE3;
+	padding: 35px;
+	margin-top: -15px;
+}
+
+#username, #password {
+	border-radius: 0px;
+	padding: 5px;
+}
+
+#cancel {
+	margin-bottom: 0;
+	margin-right: 0;
+	border-radius: 0px;
+	display: block;
+	border-style: solid;
+	border-width: 0px;
+	padding: 5px;
+	height: 35px;
+	width: 70px
+}
+
+#submit {
+	margin-bottom: 0;
+	margin-right: 0;
+	border-radius: 0px;
+	display: block;
+	background: #4BFAB7;
+	border-style: solid;
+	border-width: 0px;
+	padding: 5px;
+	height: 35px;
+	width: 70px
+}
+
+#newReg {
+	color: #3B63E6;
+	text-align: center;
+	font-size: 14px;
+	margin-top: -10px;
+
+}
+
+#companyBar {
+	background: #3B63E6;
+	height: 40px;
+}
+
+#companyMore {
+	float: right;
+	}	
+
+#companyMenu {
+	background: #AC7CE3;
+	padding: 25px;
+	width: 200px;
+	height: 425px;
+	font-size: 16px;
+}
+
+#newDept {
+	padding-bottom: 10px;
+}
+
+.titleStyle {
+	color: #000;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.imageStyle {
+	height: 25px;
+	width: 25px;
+}
+
+#departmentIcon::before {
+	padding-top: 10px;
+	font-size: 20px;
+}	
+
+#projectIcon::before {
+	padding-top: 20px;
+	font-size: 20px;
+}
+
+#projectPopover {
+	border-top: 1px solid black;
+	padding-top: 10px;
+}
+
+#companyBox {
+	padding: 15px;
+}
+
+.companyFont {
+	color: #000;
+	text-align: left;
+	margin-left: 10px;
+	font-weight: bold;
+}
+
+.new {
+	background: #4BFAB7;
+	border-width: 0px;
+	border-style: solid;
+	border-radius: 0px;
+	font-size: 10px;
+	height: 10px;
+	width: 55px;
+	
+}
+
+.no-padding{
+ padding:0!important;
+}	
+
+#usersButton {
+	background: #54A3FF;
+	color: #000;
+	border-width: 0px;
+	border-style: solid;
+	border-radius: 0px;
+	height: 30px;
+	width: 70px;
+	text-align: center;
+	font-size: 15px;
+}
+
+#alertsButton {
+	background: #AC7CE3;
+	color: #000;
+	border-width: 0px;
+	border-style: solid;
+	border-radius: 0px;
+	height: 30px;
+	width: 70px;
+	text-align: center;
+	font-size: 15px;
+}
+
+#searchField {
+	background: #4BFAB7;
+	border-width: 0px;
+	border-style: solid;
+	padding-right: 0;
+	margin: 0;
+	height: 30px;
+}
+
+#searchBox {
+	height: 20px;
+	width: 110px;
+	padding-right: 0;
+}
+
+#searchButton::before {
+	font-size: 20px;
+}
+
+.smaller {
+	font-size: small;
+}
+
+.row {
+	min-width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+#chat {
+	background: #fff;
+	height: 235px;
+}
+
+#chatMessages {
+	height: 180px;
+}
+
+#newMessage {
+	margin-left: 20px;
+}
+
+#message {
+	background: #54A3FF;
+	padding: 10px 10px 25px 10px;
+}
+
+#yourMessage {
+	min-width: 100%;
+}
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+#attach {
+	background: #4BFAB7;
+	display: block;
+	border-style: solid;
+	border-width: 0px;
+	border-radius: 0px;
+	margin-bottom: 0;
+	margin-right: 0;
+	padding: 5px;
+	height: 35px;
+	width: 75px
+}
+
+#send {
+	background: #AC7CE3;
+	display: block;
+	border-style: solid;
+	border-width: 0px;
+	border-radius: 0px;
+	margin-bottom: 0;
+	margin-right: 0;
+	padding: 5px;
+	height: 35px;
+	width: 75px
+}

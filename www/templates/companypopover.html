@@ -1,0 +1,113 @@
+<ion-popover-view id="companyMenu">
+  <ion-content>
+  <div id="companyBox" ng-controller="ViewCtrl">
+  		<div class="row row-no-padding">
+  			<div class="col col-10">
+  				<i id="departmentIcon" class="icon ion-android-apps"></i>
+  			</div>
+  			<div class="col col-90">
+  			<h4 class="companyFont" id="departmentPopover">Departments</h4>
+  			<ul class="list-unstyled smaller">
+                                  <li>
+                                            <div class="row">
+                                            <div class="col col-20">
+                                        
+                                            <img class="imageStyle" src="img/Image1.png">
+                                        
+                                            </div>
+                                            <div class="col col-80">
+                                            <a class="titleStyle" ui-sref="app.department1Messages" groupName="departmentGroup" ng-click="dept1Alert()">Department 1</a>
+                                            </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row">
+                                            <div class="col col-20">
+                                        
+                                            <img class="imageStyle" src="img/Image2.png">
+                                        
+                                            </div>
+                                            <div class="col col-80">
+                                            <a class="titleStyle" ui-sref="app.department2Messages" groupName="departmentGroup" ng-click="dept2Alert()">Department 2</a>
+                                            </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row">
+                                            <div class="col col-20">
+                                        
+                                            <img class="imageStyle" src="img/Image3.png">
+                                        
+                                            </div>
+                                            <div class="col col-80">
+                                            <a class="titleStyle" ui-sref="app.department3Messages" groupName="departmentGroup" ng-click="dept3Alert()">Department 3</a>
+                                            </div>
+                                            </div>
+                                        </li>
+                            		</ul>	
+    		</div>
+    	</div>
+    	<div class="row row-no-padding">
+  			<div class="col col-70">
+  			</div>
+  			<div id="newDept" class="col col-30">
+    			<button class="button button-small new"><i class="icon ion-plus-circled"></i> New</button>
+    		</div>
+    	</div>
+    	
+    	<div class="row row-no-padding">
+    		<div class="col col-10">
+    			<i id="projectIcon" class="icon ion-android-list"></i>
+    		</div>
+    		<div class="col col-90">
+    		<h4 class="companyFont" id="projectPopover">Projects</h4>
+    			<ul class="list-unstyled smaller">
+                                <li>
+                                            <div class="row">
+                                            <div class="col col-20">
+                                        
+                                            <img class="imageStyle" src="img/ImageA.png">
+                                        
+                                            </div>
+                                            <div class="col col-80">
+                                            <a class="titleStyle" ui-sref="app.projectAMessages" groupName="departmentGroup" ng-click="projAAlert()">Project A</a>
+                                            </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row">
+                                            <div class="col col-20">
+                                        
+                                            <img class="imageStyle" src="img/ImageB.png">
+                                        
+                                            </div>
+                                            <div class="col col-80">
+                                            <a class="titleStyle" ui-sref="app.projectBMessages" groupName="departmentGroup" ng-click="projBAlert()">Project B</a>
+                                            </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row">
+                                            <div class="col col-20">
+                                        
+                                            <img class="imageStyle" src="img/ImageC.png">
+                                        
+                                            </div>
+                                            <div class="col col-80">
+                                            <a class="titleStyle" ui-sref="app.projectCMessages" groupName="departmentGroup" ng-click="projCAlert()">Project C</a>
+                                            </div>
+                                            </div>
+                                        </li>
+                            	</ul>	
+    		</div>
+    	</div>
+    	<div class="row row-no-padding">
+  			<div class="col col-70">
+  			</div>
+  			<div class="col col-30">
+    			<button class="button button-small new" ng-click="newProject()"><i class="icon ion-plus-circled"></i> New</button>
+    		</div>
+    	</div>
+  </div>
+  </ion-content>
+</ion-popover-view>
